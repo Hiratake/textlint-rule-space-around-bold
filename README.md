@@ -1,45 +1,53 @@
 # textlint-rule-space-around-bold
 
+[![ci](https://github.com/Hiratake/textlint-rule-space-around-bold/actions/workflows/ci.yaml/badge.svg)](https://github.com/Hiratake/textlint-rule-space-around-bold/actions/workflows/ci.yaml)
+![version](https://img.shields.io/npm/v/%40hiratake%2Ftextlint-rule-space-around-bold)
+![license](https://img.shields.io/npm/l/%40hiratake%2Ftextlint-rule-space-around-bold)
 
+太字のまわりをスペースで囲むかどうかを決める [textlint](https://textlint.github.io/) ルール。
 
-## Install
+## 🚀 Setup
 
-Install with [npm](https://www.npmjs.com/):
+ルールを使用するプロジェクトに `@hiratake/textlint-rule-space-around-bold` をインストールします。
 
-    npm install textlint-rule-space-around-bold
+```sh
+# npm
+$ npm install -D @hiratake/textlint-rule-space-around-bold
+# yarn
+$ yarn add -D @hiratake/textlint-rule-space-around-bold
+# pnpm
+$ pnpm add -D @hiratake/textlint-rule-space-around-bold
+```
 
-## Usage
-
-Via `.textlintrc.json`(Recommended)
+インストール後、`.textlintrc` にルールを追加します。
 
 ```json
 {
-    "rules": {
-        "front-matter": true
-    }
+  "rules": {
+    "@hiratake/textlint-rule-space-around-bold": {
+      "before": true, // 太字の前にスペースを入れる
+      "after": true,  // 太字の後にスペースを入れる
+    },
+  }
 }
 ```
 
-Via CLI
+## 🏗 Build
 
+以下のコマンドでビルドを実行します。ビルド後のファイルは `lib/` に出力されます。
+
+```sh
+$ pnpm build
 ```
-textlint --rule front-matter README.md
+
+## 🧪 Test
+
+以下のコマンドで [textlint-tester](https://github.com/textlint/textlint-tester) によるテストを実行します。
+
+```sh
+$ pnpm test
 ```
 
-### Build
+## 📃 License
 
-Builds source codes for publish to the `lib` folder.
-You can write ES2015+ source codes in `src/` folder.
-
-    npm run build
-
-### Tests
-
-Run test code in `test` folder.
-Test textlint rule by [textlint-tester](https://github.com/textlint/textlint-tester).
-
-    npm test
-
-## License
-
-MIT © 
+MIT
