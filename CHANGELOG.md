@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/Hiratake/textlint-rule-space-around-bold/compare/v1.0.3...v1.0.4) (2024-02-05)
+
+
+### Bug Fixes
+
+* package.jsonの指定をcommonjsに修正 ([#6](https://github.com/Hiratake/textlint-rule-space-around-bold/issues/6)) ([adb9713](https://github.com/Hiratake/textlint-rule-space-around-bold/commit/adb9713fdd4889f39f3c10419337d48414f0e781))
+
 ## [1.0.3](https://github.com/Hiratake/textlint-rule-space-around-bold/compare/v1.0.2...v1.0.3) (2024-02-04)
 
 
