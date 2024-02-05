@@ -5,6 +5,7 @@
   "publishConfig": {
     "access": "public"
   },
+  "description": "Textlint rule for Bold Text",
   "keywords": [
     "textlintrule"
   ],
